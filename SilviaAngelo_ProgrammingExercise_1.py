@@ -4,4 +4,7 @@
 # Prompt the user for the desired number of tickets and then display the number of remaining tickets
 #Then display the total number of buyers.
 
+print("Hello World")
 print ("Hello World")
+print("Hello World")
+print("Hello World")
