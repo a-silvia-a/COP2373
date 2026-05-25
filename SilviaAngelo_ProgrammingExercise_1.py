@@ -27,6 +27,7 @@ def sell_tickets(remaining_tickets):
     user_input = input("How many tickets do you want to buy? ")
     requested_tickets: int = int(user_input)
 
+    #Constraints sales for up to 4 tickets
     if requested_tickets < 1 or requested_tickets > 4:
         print("Error: You can only buy up to 4 tickets.")
         return remaining_tickets
