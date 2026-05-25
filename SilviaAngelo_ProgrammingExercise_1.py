@@ -13,6 +13,7 @@ def main():
     while tickets_left > 0:
         new_tickets_left = sell_tickets(tickets_left)
 
+        #Tracks number of tickets left with accumulator and updated inventory.
         if new_tickets_left != tickets_left:
             total_buyers = total_buyers + 1
             tickets_left = new_tickets_left
