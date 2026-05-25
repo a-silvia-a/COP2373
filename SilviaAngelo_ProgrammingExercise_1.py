@@ -9,6 +9,7 @@ def main():
     tickets_left = 20
     total_buyers = 0
 
+    #Loop set to repeat until all tickets are gone.
     while tickets_left > 0:
         new_tickets_left = sell_tickets(tickets_left)
 
