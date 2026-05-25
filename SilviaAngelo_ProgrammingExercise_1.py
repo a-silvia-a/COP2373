@@ -4,6 +4,7 @@
 #Prompt the user for the desired number of tickets and then display the number of remaining tickets
 #Then display the total number of buyers.
 
+#Main Function
 def main():
     tickets_left = 20
     total_buyers = 0
