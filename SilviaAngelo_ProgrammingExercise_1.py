@@ -21,6 +21,7 @@ def main():
     print ("All tickets have been sold!")
     print (f"Total number of buyers: {total_buyers}")
 
+#Prompts user to purchase tickets, limits number of tickets, and processes the transaction.
 def sell_tickets(remaining_tickets):
     print(f"\nThere are {remaining_tickets} tickets left.")
     user_input = input("How many tickets do you want to buy? ")
