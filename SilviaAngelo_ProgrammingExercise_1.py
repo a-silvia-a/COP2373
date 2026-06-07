@@ -1,12 +1,13 @@
-#program will pre-sell a limited number of cinema tickets.
+#Program will pre-sell a limited number of cinema tickets.
 #Each buyer can buy up to 4 tickets.
 #No more than 20 tickets can be sold total.
 #Prompt the user for the desired number of tickets and then display the number of remaining tickets
 #Then display the total number of buyers.
 
-#Main Function
+#Main Function, initializes the ticket pre-sale program.
+#Manages the main sales loop, tracks total buyers, and displays final results
 def main():
-    tickets_left = 20
+    tickets_left = 10
     total_buyers = 0
 
     #Loop set to repeat until all tickets are gone.
@@ -32,10 +33,12 @@ def sell_tickets(remaining_tickets):
         print("Error: You can only buy up to 4 tickets.")
         return remaining_tickets
 
+    #Constraints inventory.
     elif requested_tickets > remaining_tickets:
         print(f"Error: We only have {remaining_tickets} tickets left.")
         return remaining_tickets
 
+    #Completes transaction.
     else:
         remaining_tickets = remaining_tickets - requested_tickets
         print(f"You bought {requested_tickets} tickets.")
