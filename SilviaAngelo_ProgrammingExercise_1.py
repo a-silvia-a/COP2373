@@ -8,7 +8,7 @@
 #Manages the main sales loop, tracks total buyers, and displays final results
 def main():
     tickets_left = 10
-    total_buyers = 0
+    total_number_buyers = 0
 
     #Loop set to repeat until all tickets are gone.
     while tickets_left > 0:
@@ -16,11 +16,11 @@ def main():
 
         #Tracks number of tickets left with accumulator and updated inventory.
         if new_tickets_left != tickets_left:
-            total_buyers = total_buyers + 1
+            total_number_buyers = total_number_buyers + 1
             tickets_left = new_tickets_left
 
     print ("All tickets have been sold!")
-    print (f"Total number of buyers: {total_buyers}")
+    print (f"Total number of buyers: {total_number_buyers}")
 
 #Prompts user to purchase tickets, limits number of tickets, and processes the transaction.
 def sell_tickets(remaining_tickets):
