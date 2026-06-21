@@ -28,6 +28,7 @@ def get_user_expenses():
 
 import functools
 def analyze_and_display_expenses(expense_list):
+    #Calculate expenses using reduce and lambdas
     total_expense_amount = functools.reduce(lambda acc, curr: acc + curr[1], expense_list, 0.0)
     highest_expense = functools.reduce(lambda acc, curr: curr if curr[1] > acc[1] else acc,expense_list)
     lowest_expense = functools.reduce(lambda acc, curr: curr if curr[1] < acc[1] else acc,expense_list)
